@@ -12,3 +12,77 @@
     --tertiary-color: #F6A96A;
     --shadow-color: #C44D24;
 }
+
+
+header a {
+    display: flex;
+}
+
+.left-icon {
+    width: 12%;
+    height: auto;
+    margin: 0.8rem auto;
+    display: flex;
+}
+
+nav {
+    position: relative; /* Gør navbaren relativ i forhold til video-containeren */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* sort baggrund */
+    color:var(--primary-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    display: none;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bigphoto {
+    width: 100%;
+}
+
+
+nav label img {
+    width: 15%;
+    height: auto;
+    margin-right: 2%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 4%;
+}
+
+#menu-bar {
+    display: none;
+}
+
+#menu-bar:checked ~ ul {
+    display: block;
+}
+
+#menu-bar:checked ~ ul li {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#menu-bar:checked ~ ul li a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.3rem;
+    font-size: 2rem;
+}
+
+header #menu-bar ul li:focus-within > ul,
+header #menu-bar ul li:hover > ul {
+    display: block;
+}
