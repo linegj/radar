@@ -86,3 +86,94 @@ header #menu-bar ul li:focus-within > ul,
 header #menu-bar ul li:hover > ul {
     display: block;
 }
+
+
+
+@media only screen and (min-width: 540px) and (orientation: landscape){ /* Til mobil der ligger ned, aka landscape mode */
+    
+    .left-icon {
+        width: 8%;
+    }
+
+    nav label img {
+        width: 9%;
+        margin-top: 2%;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) { /* Til ipad der står op, aka portrait mode */
+    .left-icon {
+        width: 12%;
+    }
+
+    nav label img {
+        width: 14%;
+        margin-top: 1.2%;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1024px) { /* Til ipad der ligger ned, aka landscape mode */
+    
+    nav label img {
+        margin-top: 1%;
+    }
+
+    
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    .left-icon {
+        width: 20%;
+    }
+    
+    nav label img {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 1 5%;
+        margin-left: 5rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 2rem;
+    }
+
+    nav ul li a:hover {
+        background: var(--tertiary-color);
+        color: var(--background-color);
+    }
+
+    nav ul li ul {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    nav ul li {
+        list-style: none;
+        padding: 1 5%;
+        margin-left: 8rem;
+    }
+
+}
