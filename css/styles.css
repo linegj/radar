@@ -15,6 +15,11 @@
 
 body {
     background-color: var(--background-color);
+    font-family: 'Arnika Variable', sans-serif;
+}
+
+h2 {
+    font-family: 'Spicy Rice', 'Arnika Variable', sans-serif;
 }
 
 
@@ -93,7 +98,7 @@ header #menu-bar ul li:hover > ul {
 
 .container1 {
     position: relative;
-    width: 80%;
+    width: 75%;
     height: 50vh;
     margin: 5rem auto;
     background-color: var(--accent-color);
@@ -157,6 +162,110 @@ button {
     justify-content: space-around;
 
 }
+
+iframe {
+    border-radius: 1rem;
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+}
+
+.wrapper2 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider-holder2{
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    height: 100%;
+}
+
+.container2 .button-holder2{
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+}
+
+
+.container2 .button-holder2 .dots {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 3rem;
+    background-color: var(--primary-color);
+    margin: .4rem .3rem;
+}
+
+.container2 {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 5rem auto;
+    border-radius: 2rem;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+.container2 h2, .sæsonkort h2, .mit-radar h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container2 p, .sæsonkort p, .mit-radar p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.musik { 
+    display: flex;
+}
+
+.vinyl img{
+    width: 70%;
+    margin-left: 20%;
+}
+
+.vinyl {
+    width: 100%;
+}
+
+.plade {
+    width: 40%;
+}
+
+
+.node1 {
+    margin-top: 0;
+    width: 15%;
+}
+
+.node3 {
+    margin-bottom: 0;
+    margin-left: 40%;
+    width: 30%
+}
+
+.node2 {
+    margin-bottom: 0;
+    margin-left: 20%;
+    width: 25%;
+}
+
+.node4 {
+    width: 40%;
+    margin-left: 20%;
+}
+
+.node5 {
+    width: 50%;
+    margin-left: 35%;
+}
+
 
 
 @media only screen and (min-width: 540px) { /* Til mobil der ligger ned, aka landscape mode */
