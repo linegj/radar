@@ -209,14 +209,14 @@ iframe {
     margin-bottom: 0;
 }
 
-.container2 h2, .sæsonkort h2, .mit-radar h2 {
+.container2 h2, .sæsonkort h2, .mit-radar h2, .program-text h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.container2 p, .sæsonkort p, .mit-radar p {
+.container2 p, .sæsonkort p, .mit-radar p, .program-text p {
     font-size: 1.2rem;
     text-align: center;
     color: var(--primary-color);
@@ -276,6 +276,10 @@ iframe {
 #node5 {
     width: 50%;
     margin-left: 35%;
+}
+
+#node6 {
+   display: none; /* Denne node skal først vises ved breakpoints for computer (1200px og 1600 px) */
 }
 
 .noder {
@@ -523,18 +527,24 @@ iframe {
     }
 
     .container1 {
-        height: 100vh;
+        height: 90vh;
+        margin-left: 5%;
+        width: 60%;
     }
 
     .overlay-text {
         margin-top: 2rem;
+    }
+
+    .overlay-text h2 {
+        font-size: 4rem;
     }
     
     button {
         font-size: 2.5rem;
     }
 
-    .container2 h2, .sæsonkort h2, .mit-radar h2, .overlay-text h2 {
+    .container2 h2, .sæsonkort h2, .mit-radar h2 {
         font-size: 6rem;
         margin-bottom: 2rem;
     }
@@ -544,12 +554,14 @@ iframe {
     }
 
     .vinyl img{
-        margin-left: 65%;
+        margin-left: 67%;
         width: 35%;
     }
 
     #node1 {
-        width: 10%;
+        width: 20%;
+        margin-left: 20%;
+        margin-bottom: 1rem;
     }
     
     #node3 {
@@ -565,7 +577,7 @@ iframe {
     }
     
     #node5 {
-        width: 30%;
+        width: 25%;
     }
      
     .container2 h2 {
@@ -597,6 +609,30 @@ iframe {
         margin-top: 7rem;
     }
 
+    .program { 
+        display: flex;
+        flex-direction: row-reverse; /* Jeg vender containerne omvendt, så jeg får tekst til højre, for at få et layout i balance */
+    }
+
+    .program-text h2 {
+        margin-top: 3rem;
+        font-size: 5rem;
+    }
+
+    .program-text p {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        margin-left: 3%;
+    }
+
+    #node6 {
+        display: block;
+        width: 35%;
+        margin-left: 15%;
+        margin-top: 30%;
+    }
+
+
 }
 
 @media only screen and (min-width: 1600px) {
@@ -613,5 +649,14 @@ iframe {
     .container1 {
         height: 90vh;
     }
+
+    iframe {
+        height: 650px;
+    }
+
+    .container1 {
+        height: 110vh;
+    }
+
 
 }
