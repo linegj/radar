@@ -167,7 +167,7 @@ button {
 iframe {
     border-radius: 1rem;
     width: 100%;
-    height: 200px;
+    height: 352px;
     margin-top: 5%;
 }
 
@@ -202,11 +202,15 @@ iframe {
 .container2 {
     position: relative;
     width: 70%;
-    height: 100%;
+    height: 650px;
     margin: 5rem auto;
     border-radius: 2rem;
     margin-left: 5%;
     margin-bottom: 0;
+}
+
+.container2 p {
+    margin-bottom: 3rem;
 }
 
 .container2 h2, .sæsonkort h2, .mit-radar h2, .program-text h2 {
@@ -252,8 +256,9 @@ iframe {
 
 
 #node1 {
-    margin-top: 2rem;
+    margin-top: 11rem;
     width: 15%;
+    margin-left: 10%;
 }
 
 #node3 {
@@ -276,6 +281,7 @@ iframe {
 #node5 {
     width: 50%;
     margin-left: 35%;
+    margin-top: 30%;
 }
 
 #node6 {
@@ -298,7 +304,29 @@ iframe {
     100% {
         transform: scale(1); /* Slutter på normal størrelse */
     }
+
 }
+
+.køb-sæsonkort-computer, .login-computer{
+    display: none;
+}
+
+.køb-sæsonkort-mobil, .login-mobil{
+    background-color: var(--primary-color);
+    margin-left: 30%;
+    width: 40%;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--background-color);
+    font-size: 1.5rem;
+}
+
 
 
 
@@ -328,7 +356,7 @@ iframe {
     }
     
     .container2 {
-        height: 550px;
+        height: 600px;
     }
 
     .container1 .button-holder1 .dots,  .container2 .button-holder2 .dots {
@@ -404,6 +432,7 @@ iframe {
     
     #node5 {
         width: 30%;
+        margin-top: 20%;
     }
     
     #dot2 {
@@ -415,7 +444,7 @@ iframe {
     }
 
     .container2 {
-        height: 700px;
+        height: 750px;
     }
 
     
@@ -450,14 +479,15 @@ iframe {
 
     #node5 {
         width: 30%;
+        margin-top: 0;
     }
 
     .container2 {
-        height: 850px;
+        height: 900px;
     }
 
     .container1 {
-        height: 80vh;
+        height: 85vh;
     }
 
     .overlay-text {
@@ -479,6 +509,16 @@ iframe {
     }
     
     .container2 p, .sæsonkort p, .mit-radar p {
+        font-size: 2rem;
+    }
+
+    .køb-sæsonkort-mobil, .login-mobil{
+        padding: 2rem;
+        margin-bottom: 5rem;
+    }
+    
+    a {
+        color: var(--background-color);
         font-size: 2rem;
     }
 
@@ -578,6 +618,7 @@ iframe {
     
     #node5 {
         width: 25%;
+        margin-top: 2%;
     }
      
     .container2 h2 {
@@ -632,6 +673,67 @@ iframe {
         margin-top: 30%;
     }
 
+    .køb-sæsonkort-computer, .login-computer{
+        display: block;
+        background-color: var(--primary-color);
+        margin-left: 10%;
+        width: 80%;
+        padding: 1.5rem;
+        margin-bottom: 4rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+    
+    .køb-sæsonkort-mobil, .login-mobil{
+        display: none;
+    }
+
+    .sæsonkort {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sæsonkort-text {
+        width: 40%;
+    }
+
+    .sæsonkort-billed {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sæsonkort-billed img {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    .mit-radar {
+        display: flex;
+    }
+
+    .mit-radar-text {
+        width: 40%;
+    }
+
+    .mit-radar-billed {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mit-radar-billed img {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    a:hover {
+        background-color: var(--shadow-color);
+        color: var(--background-color);
+    }
+
+
+
 
 }
 
@@ -658,5 +760,12 @@ iframe {
         height: 110vh;
     }
 
+    #node5 {
+        margin-top:0;
+    }
+
+    #node1 {
+        margin-top:0;
+    }
 
 }
