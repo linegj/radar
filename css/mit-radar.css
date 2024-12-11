@@ -13,18 +13,112 @@
     --shadow-color: #C44D24;
 }
 
+
+body { /* font og baggrund */
+    background-color: var(--background-color);
+    font-family: 'Arnika Variable', sans-serif;
+}
+ 
+h1, h2 { /* font */
+    font-family: 'Spicy Rice', 'Arnika Variable', sans-serif;
+}
+
+/* start navbar */
+header a {
+    display: flex;
+}
+
+.left-icon {
+    width: 12%;
+    height: auto;
+    margin: 0.8rem auto;
+    display: flex;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* sort baggrund */
+    color:var(--primary-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    display: none;
+}
+
+nav label img {
+    width: 15%;
+    height: auto;
+    margin-right: 2%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 4%;
+}
+
+#menu-bar {
+    display: none;
+}
+
+#menu-bar:checked ~ ul {
+    display: block;
+}
+
+#menu-bar:checked ~ ul li {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#menu-bar:checked ~ ul li a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.3rem;
+    font-size: 2rem;
+}
+
+header #menu-bar ul li:focus-within > ul,
+header #menu-bar ul li:hover > ul {
+    display: block;
+}
+/* slut navbar */
+
+.velkomst-container {
+    background-image: url(../img/radar.grafik.svg);
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+}
+
+.velkomst-tekst h1{
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 3rem 0.5rem 1rem 0.5rem;
+}
+
+.velkomst-tekst p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 1rem 0.5rem 3rem 0.5rem;
+}
+
+
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/radar.grafik.svg);
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center;
 }
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     background-color: transparent;
     backdrop-filter: blur(20px);
     color: var(--accent-color);
@@ -74,7 +168,7 @@
 .wrapper .remember-forgot {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: -15px 0 15px;
 }
 
@@ -84,7 +178,7 @@
 }
 
 label {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .remember-forgot a {
@@ -108,7 +202,7 @@ label {
 }
 
 .wrapper .register-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 20px;
 }
@@ -117,6 +211,6 @@ label {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 

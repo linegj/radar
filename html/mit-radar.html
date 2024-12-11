@@ -4,41 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mit Radar</title>
+    <link rel="icon" type="image/x-icon" href="../img/primaerlogo-sort.svg">
+    <link rel="stylesheet" href="https://fonts.adobe.com/fonts/arnika-variable">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&family=Spicy+Rice&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/mit-radar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header>
-    
-
+     <!-- Start af navigations bar -->
+     <nav>
+        <a href="../index.html"><img  class="left-icon" src="../img/primaerlogo-orange.svg" alt="Radars lettermark logo i orange. R bogstavet er beskåret og har en node i midten "></a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><img src="../img/menu-burger.svg" alt="Tre streger der åbner menuen"></label>
+        <ul>
+            <li><a href="#hop">Lyt til musik</a></li>
+            <li><a href="">Sæsonkort</a></li>
+            <li><a href="#hop2">Kontakt</a></li>
+            <li><a href="html/mit-radar.html">Mit Radar</a></li>
+        </ul>
+    </nav>
+    <!-- Slut af navigations bar -->
     </header>
 
     <main>
 
-    <section class="container">
-        <section class="wrapper">
-            <form action="">
-                <h2> Login</h2>
-                <section class="input-box">
-                    <input type="text" placeholder="Brugernavn" required>
-                    <i class='bx bxs-user'></i>
-                </section>
-                <section class="input-box">
-                    <input type="password" placeholder="Kodeord" required>
-                    <i class='bx bxs-lock-alt'></i>
-                </section>
-                <section class="remember-forgot">
-                   <label> <input type="checkbox"> Husk mig</label> 
-                   <a href="#">Glemt adgangskode?</a>
-                </section>
-                <button type="submit" class="btn"> Login</button>
-                <section class="register-link">
-                    <p> Har du ikke en bruger? <a href="#"> Opret bruger</a></p>
-                </section>
-            </form>
-        </section>
-    </section>
+    <!-- Start velkomst og login -->
+    <section class="velkomst-container" >
+        <aside class="velkomst-tekst">
+            <h1> Velkommen til Mit Radar</h1>
+            <p> Login for at se dine præmier, badges og tilbud</p>
+        </aside>
+        <aside class="container">
+            <section class="wrapper">
+                <form action="">
+                    <h2> Login</h2>
+                    <section class="input-box">
+                        <input type="text" placeholder="Brugernavn" required>
+                        <i class='bx bxs-user'></i>
+                    </section>
+                    <section class="input-box">
+                        <input type="password" placeholder="Kodeord" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </section>
+                    <section class="remember-forgot">
+                       <label> <input type="checkbox"> Husk mig</label> 
+                       <a href="#">Glemt adgangskode?</a>
+                    </section>
+                    <button type="submit" class="btn"> Login</button>
+                    <section class="register-link">
+                        <p> Har du ikke en bruger? <a href="#"> Opret bruger</a></p>
+                    </section>
+                </form>
+            </section>
+        </aside>
+    </section> 
+    <!-- slut velkomst og login -->
+
+    <!-- start badge -->
+     <section class="badges-tekst">
+        <h2> Mine badges</h2>
+        <p> Her kan du finde dine optjente badges samt opsøge nye badges og gevinster</p>
+     </section>
+     <section class="badge-container">
+        <aside> <img src="../img/badge.vinyl.svg" alt=""></aside>
+        <aside> <img src="../img/badge.guitar.svg" alt=""></aside>
+        <aside> <img src="../img/country.badge.svg" alt=""></aside>
+        <aside> <img src="../img/rock.badge.svg" alt=""></aside>
+        <aside> <img src="../img/spg.badge.svg" alt=""></aside>
+        <aside> <img src="../img/spg.badge.svg" alt=""></aside>
+     </section>
+     <!-- slut badge -->
 
     </main>
 
