@@ -233,16 +233,19 @@ label {
 }
 
 .indtast-container {
-   width: 100%;
+   width: 90%;
    display: flex;
    align-items: center;
    justify-content: center; 
+   height: 5rem;
+   background-color: var(--accent-color);
+   margin-left: 5%;
 }
 
 #indtast  {
     background: var(--accent-color);
-    width: 90%;
-    height: 4.5rem;
+    width: 95%;
+    height: 4rem;
     display: flex;
 }
 
@@ -250,6 +253,9 @@ label {
     flex: 1;
     border: none;
     outline: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #c4c2c4;
 }
 
 #indtast button {
@@ -259,7 +265,12 @@ label {
     outline: none;
     color: var(--background-color);
     letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 1.2rem;
 }
+
+
+
 
 
 
