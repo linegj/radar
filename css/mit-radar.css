@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #201d20; 
+    --primary-color: #F97A14; 
+    --secondary-color: #494449;
+    --accent-color: #817f81;
+    --tertiary-color: #F6A96A;
+    --shadow-color: #C44D24;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/radar.grafik.svg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 40%;
+    background-color: var(--accent-color);
+    color: ;
+}
