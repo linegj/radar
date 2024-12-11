@@ -95,20 +95,19 @@ header #menu-bar ul li:hover > ul {
     flex-direction: column;
 }
 
-.velkomst-tekst h1{
+.velkomst-tekst h1, .badges-tekst h2{
     font-size: 2.8rem;
     text-align: center;
     color: var(--primary-color);
     margin: 3rem 0.5rem 1rem 0.5rem;
 }
 
-.velkomst-tekst p{
+.velkomst-tekst p, .badges-tekst p{
     font-size: 1.7rem;
     text-align: center;
     color: var(--primary-color);
     margin: 1rem 0.5rem 3rem 0.5rem;
 }
-
 
 
 .container {
@@ -213,4 +212,24 @@ label {
     font-weight: 600;
     font-size: 1rem;
 }
+
+
+
+.badge-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+    gap: 1rem; 
+}
+
+.ramme img {
+    width: 80%; 
+    height: auto; 
+}
+
+.ramme {
+    display: flex; 
+    justify-content: center; /* centrerer billederne vandret */
+    align-items: center; /* centrerer billederne lodret */
+}
+
 
