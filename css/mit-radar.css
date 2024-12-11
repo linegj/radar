@@ -95,14 +95,14 @@ header #menu-bar ul li:hover > ul {
     flex-direction: column;
 }
 
-.velkomst-tekst h1, .badges-tekst h2{
+.velkomst-tekst h1, .badges-tekst h2, .indtast-tekst h2{
     font-size: 2.8rem;
     text-align: center;
     color: var(--primary-color);
     margin: 3rem 0.5rem 1rem 0.5rem;
 }
 
-.velkomst-tekst p, .badges-tekst p{
+.velkomst-tekst p, .badges-tekst p, .indtast-tekst p{
     font-size: 1.7rem;
     text-align: center;
     color: var(--primary-color);
@@ -231,5 +231,35 @@ label {
     justify-content: center; /* centrerer billederne vandret */
     align-items: center; /* centrerer billederne lodret */
 }
+
+.indtast-container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+}
+
+#indtast  {
+    background: var(--accent-color);
+    width: 90%;
+    height: 4.5rem;
+    display: flex;
+}
+
+#indtast input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+#indtast button {
+    background: var(--primary-color);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    color: var(--background-color);
+    letter-spacing: 1px;
+}
+
 
 
