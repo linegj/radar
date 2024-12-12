@@ -314,7 +314,7 @@ footer {
     align-items: center;
 }
 
-.wrapper {
+.wrapper2 {
     width: 90%;
     background-color: transparent;
     backdrop-filter: blur(20px);
@@ -325,13 +325,13 @@ footer {
     margin-top: 2rem;
 }
 
-.wrapper h2 {
+.wrapper2 h2 {
     font-size: 2.5rem;
     text-align: center;
     color:var(--accent-color);
 }
 
-.wrapper .input-box {
+.wrapper2 .input-box {
     width: 100%;
     height: 50px;
     margin: 30px 0;
@@ -363,7 +363,7 @@ footer {
     font-size: 1.2rem;
 }
 
-.wrapper .remember-forgot {
+.wrapper2 .remember-forgot {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
@@ -385,7 +385,7 @@ label {
     font-weight: 600;
 }
 
-.wrapper .btn {
+.wrapper2 .btn {
     width: 100%;
     height: 45px;
     background-color: var(--primary-color);
@@ -399,7 +399,7 @@ label {
     font-weight: 600;
 }
 
-.wrapper .register-link {
+.wrapper2 .register-link {
     font-size: 1rem;
     text-align: center;
     margin-top: 20px;
@@ -487,7 +487,7 @@ label {
         width: 60%;
     }
 
-    .wrapper {
+    .wrapper2 {
         width: 100%;
         margin-top: 0;
     }
@@ -501,6 +501,48 @@ label {
     nav label img {
         margin-top: 1%;
     }
+
+    .badge-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 2 kolonner */
+        gap: 1rem; 
+    }
+
+    .velkomst-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .velkomst-tekst {
+        width: 50%;
+        margin-top: 10rem;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .wrapper {
+        margin-bottom: 3rem;
+    }
+
+    .velkomst-tekst h1 {
+        font-size: 4rem;
+    }
+
+    .velkomst-tekst p {
+        font-size: 2rem;
+    }
+
+    .remember-forgot a, .register-link p, .register-link p a, label, .input-box input {
+        font-size: 1.5rem;
+    }
+
+    .wrapper2 {
+        width: 80%;
+    }
+    
 
 }
 
@@ -548,10 +590,33 @@ label {
     }
      /* Slut navbar desktop*/
 
-     .wrapper {
+     .wrapper2 {
         width: 75%;
     }
 
+    .badges-tekst h2, .indtast-tekst h2, .scoreboard-tekst{
+        font-size: 4.5rem;
+    }
+    
+    .velkomst-tekst p, .badges-tekst p, .indtast-tekst p{
+        font-size: 2rem;
+    }
+
+    .velkomst-tekst a, .scoreboard a {
+        font-size: 2rem;
+    }
+
+    .scoreboard a {
+        margin-top: 3rem;
+    }
+
+     .scoreboard-tekst {
+        margin-top: 6rem;
+    }
+
+    .velkomst-tekst a:hover, .scoreboard a:hover {
+        background-color: var(--shadow-color);
+    }
 
 }
 

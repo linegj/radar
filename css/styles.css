@@ -886,10 +886,12 @@ label {
         margin-top: 2rem;
     }
 
-    a:hover {
+    .login-computer a:hover , .køb-sæsonkort-computer a:hover {
         background-color: var(--shadow-color);
         color: var(--background-color);
     }
+    
+
 
 
     .lyt-til-musik {
