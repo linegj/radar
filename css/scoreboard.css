@@ -4,6 +4,380 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background-color: #201d20; 
+    --primary-color: #F97A14; 
+    --secondary-color: #494449;
+    --accent-color: #817f81;
+    --tertiary-color: #F6A96A;
+    --shadow-color: #C44D24;
+}
+
+
+body { /* font og baggrund */
+    background-color: var(--background-color);
+    font-family: 'Arnika Variable', sans-serif;
+}
+ 
+h1, h2 { /* font */
+    font-family: 'Spicy Rice', 'Arnika Variable', sans-serif;
+}
+
 video {
     width: 100%;
+}
+
+/* Start styling af navigationsbar */
+header a {
+    display: flex;
+}
+
+.left-icon {
+    width: 12%;
+    height: auto;
+    margin: 0.8rem auto;
+    display: flex;
+}
+
+nav {
+    position: relative; /* Gør navbaren relativ i forhold til video-containeren */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* sort baggrund */
+    color:var(--primary-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    display: none;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bigphoto {
+    width: 100%;
+}
+
+
+nav label img {
+    width: 15%;
+    height: auto;
+    margin-right: 2%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 4%;
+}
+
+#menu-bar {
+    display: none;
+}
+
+#menu-bar:checked ~ ul {
+    display: block;
+}
+
+#menu-bar:checked ~ ul li {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#menu-bar:checked ~ ul li a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.3rem;
+    font-size: 2rem;
+}
+
+header #menu-bar ul li:focus-within > ul,
+header #menu-bar ul li:hover > ul {
+    display: block;
+}
+/* Slut styling af navbar */
+
+
+
+
+
+/* starter styling af footer på mobilenhed */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/radar.grafik.svg);
+    background-size: cover;
+}
+
+
+.footer-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 90%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: var(--accent-color);
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: 2px solid rgba(118, 117, 117, 0.5);
+    margin-top: 2rem;
+}
+
+.wrapper h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color:var(--accent-color);
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+     width: 100%;
+     height: 100%;
+     background: transparent;
+     border: none;
+     outline: none;
+     border: 2px solid rgba(118, 117, 117, 0.5);
+     border-radius: 40px;
+     font-size: 1.2rem;
+     color: var(--primary-color);
+     padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: var(--accent-color);
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    color: var(--accent-color);
+    margin-right: 3px;
+}
+
+label {
+    font-size: 1rem;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: var(--background-color);
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.footer-kontakt {
+    margin-top: 2rem;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+ ul li {
+    list-style-type: none; /* jeg fjerner prikkerne */
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.kontakt1, .kontakt2 {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.footer-kontakt h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/* slutter styling af footer på mobilenhed */
+
+
+
+@media only screen and (min-width: 540px) { /* Til mobil der ligger ned, aka landscape mode */
+    
+    .left-icon {
+        width: 8%;
+    }
+
+    nav label img {
+        width: 9%;
+        margin-top: 2%;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) { /* Til ipad der står op, portrait mode */
+    .left-icon {
+        width: 12%;
+    }
+
+    nav label img {
+        width: 14%;
+        margin-top: 1.2%;
+    }
+
+    /* start styling af footer */
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .footer-info{  /* skal stå i columns */
+        display: flex;
+        flex-direction:column;
+    }
+
+    .footer-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-top: 0;
+    }
+
+     /* slut styling af footer */
+
+}
+
+@media only screen and (min-width: 1024px) { /* Til ipad der ligger ned, aka landscape mode */
+    
+    nav label img {
+        margin-top: 1%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+
+
+    /* Start navbar desktop*/
+    .left-icon {
+        width: 20%;
+    }
+    
+    nav label img {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 1 5%;
+        margin-left: 5rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 2rem;
+    }
+
+    nav ul li a:hover {
+        background: var(--tertiary-color);
+        color: var(--background-color);
+    }
+
+    nav ul li ul {
+        display: none;
+    }
+     /* Slut navbar desktop*/
+
+     .wrapper {
+        width: 75%;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    nav ul li {
+        list-style: none;
+        padding: 1 5%;
+        margin-left: 8rem;
+    }
+
+    .left-icon {
+        width: 25%;
+    }
+
+
+    .footer-kontakt h2 {
+        font-size: 5rem;
+    }
+
+
 }

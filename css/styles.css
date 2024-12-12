@@ -22,7 +22,7 @@ h2 {
     font-family: 'Spicy Rice', 'Arnika Variable', sans-serif;
 }
 
-
+/* Start styling af navigationsbar */
 header a {
     display: flex;
 }
@@ -95,6 +95,7 @@ header #menu-bar ul li:focus-within > ul,
 header #menu-bar ul li:hover > ul {
     display: block;
 }
+/* Slut styling af navbar */
 
 .container1 {
     position: relative;
@@ -603,6 +604,7 @@ label {
         margin-top: 18%;
     }
 
+    /* start styling af footer */
     footer {
         display: flex;
         flex-direction: row-reverse;
@@ -626,6 +628,8 @@ label {
         width: 100%;
         margin-top: 0;
     }
+
+     /* slut styling af footer */
 
     
 }
@@ -707,6 +711,8 @@ label {
 
 @media only screen and (min-width: 1200px){
 
+
+    /* Start navbar desktop*/
     .left-icon {
         width: 20%;
     }
@@ -745,6 +751,7 @@ label {
     nav ul li ul {
         display: none;
     }
+     /* Slut navbar desktop*/
 
     .container1 {
         height: 780px;
