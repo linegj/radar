@@ -166,12 +166,12 @@
                 <h2>Mit Radar</h2>
                 <p>Login for at se dine badges og præmier. Hold din profil opdateret og fordyb dig i musikkens verden</p>
                 <aside class="login-computer">
-                    <a href="#" class="mit-radar-button" >Login</a>
+                    <a href="html/mit-radar.html" class="mit-radar-button" >Login</a>
                 </aside>
             </aside>
             <aside class="mit-radar-billed"><img src="img/badge.svg" alt=""></aside>
             <aside class="login-mobil">
-                <a href="#" class="mit-radar-button"> Login</a>
+                <a href="html/mit-radar.html" class="mit-radar-button"> Login</a>
             </aside>
      </section>
      <!-- slut henvisning til Mit Radar-->
@@ -181,38 +181,48 @@
     <!-- start footer-->
     <footer>
         <footer class="footer">
-            <section class="footer-login">
-                <h2>Login</h2>
-                <form>
-                    <label for="navn">Navn</label>
-                    <input type="text" id="navn" name="navn">
-                    <label for="e-mail">E-mail</label>
-                    <input type="text" id="e-mail" name="e-mail">
-                    <label for="telefon">Telefon nr</label>
-                    <input type="text" id="telefon" name="telefon">
-                    <input type="submit" value="Indsend">
-                </form>
-                <p> Opret buger</p>
-            </section>
-            <section id="hop2" class="footer-kontakt">
+            <aside class="footer-login">
+                <section class="wrapper">
+                    <form action="">
+                        <h2> Login</h2>
+                        <section class="input-box">
+                            <input type="text" placeholder="Brugernavn" required>
+                            <i class='bx bxs-user'></i>
+                        </section>
+                        <section class="input-box">
+                            <input type="password" placeholder="Kodeord" required>
+                            <i class='bx bxs-lock-alt'></i>
+                        </section>
+                        <section class="remember-forgot">
+                           <label> <input type="checkbox"> Husk mig</label> 
+                           <a href="#">Glemt adgangskode?</a>
+                        </section>
+                        <button type="submit" class="btn"> Login</button>
+                        <section class="register-link">
+                            <p> Har du ikke en bruger? <a href="#"> Opret bruger</a></p>
+                        </section>
+                    </form>
+                </section> 
+            </aside>
+
+            <aside id="hop2" class="footer-kontakt">
                 <h2>Kontakt</h2>
-                <ul class="kontakt1">
-                    <li>Kennedys</li>
-                    <li>Astervej 9</li>
-                    <li>8471 Sabro</li>
-                    <li>Danmark</li>
-                    <li>CVR-nummer: 28934874</li>
-                </ul>
-                <ul class="kontakt2">
-                    <li>Telefon nr:</li>
-                    <li>+4586495200</li>
-                    <li>E-mail: </li>
-                    <li>salonen@kennedys.dk</li>
-                </ul>
-            </section>
-            <section class="footer-section logo-section">
-                <img src="../imgs/logo.footer.webp" alt="Kennedys Logo" class="footer-logo">
-            </section>
+                <aside class="footer-info">
+                    <ul class="kontakt1">
+                        <li> Radar</li>
+                        <li> Karen Wegeners Gade 6</li>
+                        <li> DK 8000 Aarhus C</li>
+                        <li> Telefon </li>
+                        <li> +45 86 76 03 44</li>
+                    </ul>
+                    <ul class="kontakt2">
+                        <li>Bookingforespørgsler:</li>
+                        <li>booking(@)radarlive.dk</li>
+                        <li>Generel kontakt:</li>
+                        <li>kontakt(@)radarlive.dk</li>
+                    </ul>
+                </aside>
+            </aside>
         
     </footer>
     <!-- slut footer-->
