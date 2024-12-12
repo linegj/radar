@@ -228,6 +228,10 @@ iframe {
     margin-top: 3rem;
 }
 
+.sæsonkort p, .mit-radar p {
+    margin-bottom: 2rem;
+}
+
 .musik { 
     display: flex;
     flex-direction: column;
@@ -290,6 +294,7 @@ iframe {
     text-align: center;
     margin-bottom: 4rem;
     border-radius: 1rem;
+    margin-top: 2rem;
 }
 
 a {
@@ -308,6 +313,7 @@ aside.sæsonkort-billed, aside.mit-radar-billed {
 }
 
 
+/* starter styling af footer på mobilenhed */
 footer {
     display: flex;
     flex-direction: column;
@@ -438,11 +444,12 @@ label {
     text-align: center;
 }
 
-
 .kontakt1, .kontakt2 {
     width: 100%;
     margin-bottom: 2rem;
 }
+/* slutter styling af footer på mobilenhed */
+
 
 @media only screen and (min-width: 540px) { /* Til mobil der ligger ned, aka landscape mode */
     
@@ -485,6 +492,41 @@ label {
     a {
         font-size: 1.7rem;
     }
+
+    .container2 h2, .sæsonkort h2, .mit-radar h2, .program-text h2, .lyt-til-musik h2, .footer-kontakt h2 {
+        font-size: 3rem;
+    }
+
+    .footer-info{  /* skal stå i rækker frem for columns */
+        display: flex;
+        flex-direction:row;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    .wrapper .register-link , .wrapper .register-link a {
+        font-size: 1.3rem;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    .input-box input {
+        font-size: 1.3rem;
+    }
+
+    .remember-forgot a {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    .wrapper .btn {
+        font-size: 1.3rem;
+    }
+
 
 }
 
@@ -559,6 +601,30 @@ label {
 
     .noder1 {
         margin-top: 18%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .footer-info{  /* skal stå i columns */
+        display: flex;
+        flex-direction:column;
+    }
+
+    .footer-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-top: 0;
     }
 
     
@@ -826,6 +892,10 @@ label {
         margin-left: 5%;
     }
 
+    .wrapper {
+        width: 75%;
+    }
+
 
 
 }
@@ -847,7 +917,11 @@ label {
 
 
     .container1 {
-        height: 110vh;
+        height: 800px;
+    }
+
+    .footer-kontakt h2 {
+        font-size: 5rem;
     }
 
 
