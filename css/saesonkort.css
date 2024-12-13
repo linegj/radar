@@ -101,7 +101,7 @@ header #menu-bar ul li:hover > ul {
 .start-tekst h1, .start-tekst1 h2, .start-tekst2 h2, .start-tekst3 h2 {
     font-size: 2.8rem;
     text-align: center;
-    margin: 3rem 0.5rem 1rem 0.5rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .start-tekst p, .start-tekst1 p, .start-tekst2 p, .start-tekst3 p{
@@ -114,9 +114,9 @@ header #menu-bar ul li:hover > ul {
     width: 40%;
     padding: 1rem;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
     border-radius: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .køb-dit-sæsonkort a, .køb-delux a, .køb-platin a, .køb-studie a {
@@ -126,6 +126,7 @@ header #menu-bar ul li:hover > ul {
 
 .køb-dit-sæsonkort, .køb-delux {
     background-color: var(--primary-color);
+    font-size: 1.2rem;
 }
 
 .start-tekst p, .start-tekst1 p, .start-tekst h1, .start-tekst1 h2 {
@@ -133,7 +134,7 @@ header #menu-bar ul li:hover > ul {
 }
 
 .start-tekst1 h2, .start-tekst1 p {
-    text-shadow: 2px 2px 5px rgba(119, 118, 118, 0.5);
+    text-shadow: 2px 2px 5px rgba(119, 118, 118, 0.3);
 }
 
 .køb-dit-sæsonkort a, .køb-delux a {
@@ -146,20 +147,22 @@ header #menu-bar ul li:hover > ul {
 
 .start-tekst2 h2, .start-tekst2 p {
     color: var(--accent-color);
-    text-shadow: 2px 2px 5px rgba(119, 118, 118, 0.5);
+    text-shadow: 2px 2px 5px rgba(190, 189, 187, 0.3);
 }
 
 .køb-platin {
     background-color: var(--accent-color);
+    font-size: 1.2rem;
 }
 
 .køb-platin a{
     color: var(--background-color);
+    font-size: 1.2rem;
 }
 
 .start-tekst3 h2, .start-tekst3 p {
     color: #000;
-    text-shadow: 2px 2px 5px rgba(119, 118, 118, 0.8);
+    text-shadow: 2px 2px 5px rgba(243, 141, 16, 0.559);
 }
 
 .køb-studie {
@@ -168,6 +171,7 @@ header #menu-bar ul li:hover > ul {
 
 .køb-studie a {
     color: var(--primary-color);
+    font-size: 1.2rem;
 }
 
 
@@ -187,8 +191,6 @@ header #menu-bar ul li:hover > ul {
 .billed-container img{
     width: 90%;
 }
-
-
 
 
 /* starter styling af footer på mobilenhed */
@@ -346,6 +348,17 @@ label {
         margin-top: 2%;
     }
 
+    .start-tekst h1, .start-tekst1 h2, .start-tekst2 h2, .start-tekst3 h2 {
+        font-size: 5rem;
+    }
+    
+    .start-tekst p, .start-tekst1 p, .start-tekst2 p, .start-tekst3 p{
+        font-size: 2.5rem;
+    }
+
+    .køb-studie a, .køb-platin a, .køb-delux a, .køb-dit-sæsonkort a {
+        font-size: 2rem;
+    }
 }
 
 
@@ -357,6 +370,16 @@ label {
     nav label img {
         width: 14%;
         margin-top: 1.2%;
+    }
+
+    .billed-container1 img, .billed-container2 img, .billed-container3 img {
+        width: 90%;
+    }
+
+    .billed-container1 , .billed-container2 , .billed-container3  {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4rem;
     }
 
     /* start styling af footer */
@@ -393,6 +416,11 @@ label {
     nav label img {
         margin-top: 1%;
     }
+
+    .billed-container1 img, .billed-container2 img, .billed-container3 img {
+        width: 80%;
+    }
+
 
 }
 
@@ -440,6 +468,41 @@ label {
     }
      /* Slut navbar desktop*/
 
+
+     .start-container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .start-tekst {
+        width: 70%;
+        margin-right: 1rem;
+    }
+
+    .start-container1, .start-container3 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .billed-container1 img, .billed-container2 img, .billed-container3 img {
+        width: 100%;
+    }
+
+    .start-tekst1, .start-tekst2, .start-tekst3 {
+        width: 60%;
+    }
+
+    .billed-container1, .billed-container2,  .billed-container3 {
+        width: 40%;
+    }
+
+    .start-container2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
      .wrapper {
         width: 75%;
     }
@@ -459,9 +522,20 @@ label {
         width: 25%;
     }
 
+    .start-tekst1, .start-tekst2, .start-tekst3 {
+        width: 50%;
+    }
+
+    .billed-container1, .billed-container2,  .billed-container3 {
+        width: 50%;
+    }
+
     .footer-kontakt h2 {
         font-size: 5rem;
     }
 
+    .start-tekst h1, .start-tekst1 h2, .start-tekst2 h2, .start-tekst3 h2 {
+        margin-top: 3.5rem;
+    }
 
 }

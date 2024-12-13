@@ -414,6 +414,7 @@ label {
         display: grid;
         grid-template-columns: repeat(3, 50%);
         height: 100%;
+        justify-items: center;
     }
 
     .titel h2 {
@@ -454,6 +455,9 @@ label {
         display: none;
     }
     
+    .container img{
+        width: 90%;
+    }
 
 
 }
@@ -549,6 +553,9 @@ label {
         display: none;
     }
     
+    .container img{
+        width: 80%;
+    }
 
 }
 
