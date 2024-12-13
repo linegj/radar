@@ -98,6 +98,42 @@ header #menu-bar ul li:hover > ul {
 /* Slut styling af navbar */
 
 
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    width: 100%;
+
+}
+.box1 {
+    position: relative;
+    width: 75%;
+    height: 390px;
+    margin: 1rem auto;
+    background-color: var(--accent-color);
+    border-radius: 2rem;
+}
+
+.button-holder1{
+    margin-left: 40%;
+}
+
+
+.button-holder1 .dots {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 3rem;
+    background-color:var(--primary-color);
+    margin: .4rem .3rem;
+}
+
+.box1 img {
+    width: 20%;
+}
+
+
+
+
 /* starter styling af footer på mobilenhed */
 footer {
     display: flex;

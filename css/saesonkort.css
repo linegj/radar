@@ -130,6 +130,9 @@ header #menu-bar ul li:hover > ul {
 
 .start-tekst p, .start-tekst1 p, .start-tekst h1, .start-tekst1 h2 {
     color: var(--primary-color);
+}
+
+.start-tekst1 h2, .start-tekst1 p {
     text-shadow: 2px 2px 5px rgba(119, 118, 118, 0.5);
 }
 
@@ -156,7 +159,7 @@ header #menu-bar ul li:hover > ul {
 
 .start-tekst3 h2, .start-tekst3 p {
     color: #000;
-    text-shadow: 2px 2px 5px rgba(119, 118, 118, 0.5);
+    text-shadow: 2px 2px 5px rgba(119, 118, 118, 0.8);
 }
 
 .køb-studie {
