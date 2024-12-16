@@ -622,40 +622,48 @@ label {
         background-color: var(--shadow-color);
     }
 
-    #spg1, #spg2 {
+    #spg1, #spg2, #vinyl, #bassboss, #country, #rock {
         position: relative;
         display: inline-block; 
         width: 80%; 
         height: 80%; 
     }
 
-    #spg1 p, #spg2 p {
+    #spg1 p, #spg2 p, #vinyl p, #bassboss p, #country p, #rock p{
         display: block;
     }
+
     
-    #spg1 img, #spg2 img {
-        width: 100%; /* Tilpas billedets bredde til containeren */
-        height: auto; /* Bevar proportioner */
+    
+    #spg1 img, #spg2 img, #vinyl img, #bassboss img, #country img, #rock img{
+        width: 80%; 
+        height: auto; /* Bevar proportioner på badge */
         margin-left: 3rem;
     }
     
     .hover-effekt {
         position: absolute;
         top: 40%;
-        left: 60%;
+        left: 55%;
         transform: translate(-50%, -50%);
         color: var(--primary-color);
         padding: 10px;
         border-radius: 5px;
-        opacity: 0; /* Skjuler teksten standard */
+        opacity: 0; /* Skjuler teksten */
         visibility: hidden;
         transition: opacity 0.3s ease, visibility 0.3s ease; 
-        width: 250px;
+        width: 200px;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
     }
     
-    #spg1:hover .hover-effekt, #spg2:hover .hover-effekt  {
+    #spg1:hover .hover-effekt, #spg2:hover .hover-effekt, #vinyl:hover .hover-effekt, #bassboss:hover .hover-effekt, #country:hover .hover-effekt, #rock:hover .hover-effekt  {
         opacity: 1; /* Viser teksten ved hover */
         visibility: visible;
+    }
+
+    .ramme img {
+        width: 80%;
     }
 
 
