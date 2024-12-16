@@ -124,6 +124,10 @@ header #menu-bar ul li:hover > ul {
     margin: 3rem 0.5rem 1rem 0.5rem;
 }
 
+.indtast-tekst h2 {
+    margin-top: 4rem;
+}
+
 .velkomst-tekst p, .badges-tekst p, .indtast-tekst p{
     font-size: 1.2rem;
     text-align: center;
@@ -236,7 +240,6 @@ label {
 }
 
 
-
 .badge-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
@@ -255,8 +258,18 @@ label {
     align-items: center; /* centrerer badge lodret */
 }
 
+.ramme h2{
+    font-size: 1.5rem;
+    color:var(--primary-color);
+    text-align: center;
+}
+
 #spg1 p, #spg2 p {
     display: none;
+}
+
+#spg1 h2, #spg2 h2{
+    color: var(--accent-color);
 }
 
 .indtast-container {
@@ -632,6 +645,10 @@ label {
 
     #spg1 p, #spg2 p, #vinyl h2, #bassboss h2, #country h2, #rock h2{
         display: block;
+    }
+
+    #spg1 h2, #spg2 h2 {
+        display: none;
     }
 
     

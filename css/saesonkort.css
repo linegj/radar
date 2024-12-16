@@ -105,8 +105,10 @@ header #menu-bar ul li:hover > ul {
 }
 
 .start-tekst p, .start-tekst1 p, .start-tekst2 p, .start-tekst3 p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .køb-dit-sæsonkort, .køb-delux, .køb-platin, .køb-studie{
@@ -353,7 +355,9 @@ label {
     }
     
     .start-tekst p, .start-tekst1 p, .start-tekst2 p, .start-tekst3 p{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-left:2rem ;
+        margin-right: 2rem;
     }
 
     .køb-studie a, .køb-platin a, .køb-delux a, .køb-dit-sæsonkort a {
@@ -381,6 +385,15 @@ label {
         justify-content: space-around;
         margin-top: 4rem;
     }
+
+    .køb-dit-sæsonkort, .køb-delux, .køb-platin, .køb-studie {
+        padding: 2rem;
+    }
+
+    .start-tekst p, .start-tekst1 p, .start-tekst2 p, .start-tekst3 p{
+        font-size: 2.5rem;
+    }
+
 
     /* start styling af footer */
     footer {
@@ -418,11 +431,22 @@ label {
     }
 
     .billed-container1 img, .billed-container2 img, .billed-container3 img {
-        width: 80%;
+        width: 70%;
     }
 
+    .start-tekst p, .start-tekst1 p, .start-tekst2 p, .start-tekst3 p {
+        font-size: 3rem;
+    }
 
+    .start-tekst h1, .start-tekst1 h2, .start-tekst2 h2, .start-tekst3 h2 {
+        font-size: 7rem;
+    }
+
+    .køb-studie a, .køb-platin a, .køb-delux a, .køb-dit-sæsonkort a {
+        font-size: 2.5rem;
+    }
 }
+
 
 @media only screen and (min-width: 1200px){
 
