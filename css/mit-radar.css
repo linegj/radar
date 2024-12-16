@@ -250,6 +250,7 @@ label {
 
 .ramme {
     display: flex; 
+    flex-direction: column;
     justify-content: center; /* centrerer badge vandret */
     align-items: center; /* centrerer badge lodret */
 }
@@ -629,7 +630,7 @@ label {
         height: 80%; 
     }
 
-    #spg1 p, #spg2 p, #vinyl p, #bassboss p, #country p, #rock p{
+    #spg1 p, #spg2 p, #vinyl h2, #bassboss h2, #country h2, #rock h2{
         display: block;
     }
 
@@ -638,13 +639,13 @@ label {
     #spg1 img, #spg2 img, #vinyl img, #bassboss img, #country img, #rock img{
         width: 80%; 
         height: auto; /* Bevar proportioner på badge */
-        margin-left: 3rem;
+        margin-left: 5rem;
     }
     
     .hover-effekt {
         position: absolute;
         top: 40%;
-        left: 55%;
+        left: 62%;
         transform: translate(-50%, -50%);
         color: var(--primary-color);
         padding: 10px;
@@ -662,9 +663,7 @@ label {
         visibility: visible;
     }
 
-    .ramme img {
-        width: 80%;
-    }
+
 
 
 }
