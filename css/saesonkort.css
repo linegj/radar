@@ -539,6 +539,22 @@ label {
         width: 75%;
     }
 
+    .start-tekst p, .start-tekst1 p, .start-tekst2 p, .start-tekst3 p {
+        font-size: 2rem;
+    }
+
+    .start-tekst h1, .start-tekst1 h2, .start-tekst2 h2, .start-tekst3 h2 {
+        font-size: 5rem;
+    }
+
+    .køb-studie a, .køb-platin a, .køb-delux a, .køb-dit-sæsonkort a {
+        font-size: 2rem;
+    }
+
+    .køb-dit-sæsonkort a {
+        font-size: 1.8rem;
+    }
+
 
 }
 
