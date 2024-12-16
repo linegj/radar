@@ -527,7 +527,7 @@ label {
     }
 
     .noder1 {
-        margin-top: 2.5rem;
+        margin-top: 4rem;
     }
 
     a {
@@ -645,7 +645,7 @@ label {
     }
 
     .noder1 {
-        margin-top: 18%;
+        margin-top: 15rem;
     }
 
     /* start styling af footer */
@@ -749,7 +749,7 @@ label {
     }
 
     .noder1 {
-        margin-top: 35%;
+        margin-top: 34rem;
     }
 
 
@@ -961,8 +961,6 @@ label {
     }
     
 
-
-
     .lyt-til-musik {
         width: 90%;
         margin-top: 2rem;
@@ -972,6 +970,10 @@ label {
 
     .wrapper {
         width: 75%;
+    }
+
+    .noder1 {
+        margin-top: 36rem;
     }
 
 
