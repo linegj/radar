@@ -1,4 +1,4 @@
 user-agent:*
 disallow:/
-sitemap:/sitemap.xml
+sitemap:https://radar.eksamensprojekt.linegraves.dk/sitemap.xml
 
