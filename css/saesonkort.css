@@ -35,30 +35,53 @@ header a {
 }
 
 nav {
-    position: relative; /* Gør navbaren relativ i forhold til video-containeren */
+    position: relative; 
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000; /* sort baggrund */
+    background-color: #000000; 
     color:var(--primary-color);
     padding: 1rem 0;
     text-align: center;
 }
 
 nav ul {
-    display: none;
+    display: none; /* Skjuler navbaren på mobil */
+    flex-direction: column; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.cover {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+nav ul li {
+    position: relative; 
 }
 
-#bigphoto {
-    width: 100%;
+nav ul li ul {
+    display: none; /* Skjul min dropdownmenu som standard */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 1rem;
 }
 
+nav ul li ul li {
+    padding: 0.5rem;
+}
+
+nav ul li ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.3rem;
+    font-size: 2rem;
+}
 
 nav label img {
     width: 15%;
@@ -74,26 +97,19 @@ nav label img {
     display: none;
 }
 
+
 #menu-bar:checked ~ ul {
-    display: block;
+    display: flex; 
 }
+
+#menu-bar:checked ~ ul li:hover > ul,
+#menu-bar:checked ~ ul li:focus-within > ul {
+    display: flex; /* Viser min dropdownmenu på mobil*/
+}
+
 
 #menu-bar:checked ~ ul li {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-#menu-bar:checked ~ ul li a {
-    display: block;
-    margin: 0 auto;
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 0.3rem;
-    font-size: 2rem;
-}
-
-header #menu-bar ul li:focus-within > ul,
-header #menu-bar ul li:hover > ul {
-    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 /* Slut styling af navbar */
 
@@ -451,7 +467,7 @@ label {
 @media only screen and (min-width: 1200px){
 
 
-    /* Start navbar desktop*/
+    /* Start navbar computer*/
     .left-icon {
         width: 20%;
     }
@@ -464,22 +480,40 @@ label {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
     }
 
     nav ul {
         display: flex;
+        flex-direction: row;
     }
 
     nav ul li {
         list-style: none;
-        padding: 1 5%;
-        margin-left: 5rem;
+        position: relative; 
+        padding: 0 2rem;
+    }
+
+    nav ul li ul {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1rem;
+        min-width: 200px; 
+        z-index: 10
+    }
+
+    nav ul li:hover > ul { /* Viser min dropdown når man hover over Mit Radar */
+        display: block;
     }
 
     nav ul li a {
         text-decoration: none;
         color: var(--primary-color);
         font-size: 2rem;
+        padding: 0.5rem 1rem;
     }
 
     nav ul li a:hover {
@@ -487,11 +521,14 @@ label {
         color: var(--background-color);
     }
 
-    nav ul li ul {
-        display: none;
+    nav ul li ul li {
+        padding: 0.5rem 0;
     }
-     /* Slut navbar desktop*/
+    nav ul li ul li a {
+        font-size: 1.5rem; 
+    }
 
+     /* Slut navbar computer*/
 
      .start-container {
         display: flex;
