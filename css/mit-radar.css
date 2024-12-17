@@ -575,7 +575,7 @@ label {
 
     .badge-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 2 kolonner */
+        grid-template-columns: repeat(3, 1fr); 
         gap: 1rem; 
     }
 
@@ -726,8 +726,6 @@ label {
         display: none;
     }
 
-    
-    
     #spg1 img, #spg2 img, #vinyl img, #bassboss img, #country img, #rock img{
         width: 80%; 
         height: auto; /* Bevar proportioner på badge */
@@ -750,7 +748,9 @@ label {
         background-color: rgba(0, 0, 0, 0.5);
     }
     
-    #spg1:hover .hover-effekt, #spg2:hover .hover-effekt, #vinyl:hover .hover-effekt, #bassboss:hover .hover-effekt, #country:hover .hover-effekt, #rock:hover .hover-effekt  {
+    #spg1:hover .hover-effekt, #spg2:hover .hover-effekt, 
+    #vinyl:hover .hover-effekt, #bassboss:hover .hover-effekt, 
+    #country:hover .hover-effekt, #rock:hover .hover-effekt  {
         opacity: 1; /* Viser teksten ved hover */
         visibility: visible;
     }
