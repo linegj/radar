@@ -264,6 +264,20 @@ label {
     text-align: center;
     margin-bottom: 1rem;
 }
+
+.medier {
+    display: flex;
+    margin-top: 2rem
+}
+
+.medier img {
+    width: 35%;
+}
+
+.medier aside{
+    display: flex;
+    justify-content: center;
+}
 /* slutter styling af footer på mobilenhed */
 
 
@@ -309,7 +323,7 @@ label {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 60%;
+        width: 50%;
     }
 
     .wrapper {
@@ -317,6 +331,13 @@ label {
         margin-top: 0;
     }
 
+    .footer-kontakt {
+        width: 40%;
+    }
+
+    .medier img {
+        width: 40%;
+    }
      /* slut styling af footer */
 
 }
@@ -398,6 +419,14 @@ label {
         width: 75%;
     }
 
+    .medier img {
+        width: 30%;
+    }
+
+    .medier {
+        margin-top: 4rem;
+    }
+
 }
 
 @media only screen and (min-width: 1600px) {
@@ -414,6 +443,10 @@ label {
 
     .footer-kontakt h2 {
         font-size: 5rem;
+    }
+
+    .footer-info ul li {
+        font-size: 2rem;
     }
 
 
