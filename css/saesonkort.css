@@ -507,6 +507,7 @@ label {
     nav ul {
         display: flex;
         flex-direction: row;
+        margin-right: 4rem;
     }
 
     nav ul li {
@@ -534,7 +535,6 @@ label {
         text-decoration: none;
         color: var(--primary-color);
         font-size: 2rem;
-        padding: 0.5rem 1rem;
     }
 
     nav ul li a:hover {

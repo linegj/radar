@@ -201,6 +201,10 @@ h3 {
     margin-top: 2rem;
 }
 
+.lyd {
+    display: flex;
+
+}
 
 iframe {
     border-radius: 1rem;
@@ -278,10 +282,6 @@ iframe {
     flex-direction: column;
 }
 
-.lyd {
-    display: flex;
-
-}
 
 .lyt-til-musik {
     width: 90%;
@@ -795,6 +795,7 @@ label {
     nav ul {
         display: flex;
         flex-direction: row;
+        margin-right: 4rem;
     }
 
     nav ul li {
@@ -822,7 +823,6 @@ label {
         text-decoration: none;
         color: var(--primary-color);
         font-size: 2rem;
-        padding: 0.5rem 1rem;
     }
 
     nav ul li a:hover {
